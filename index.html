@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <section>
+      <div class="container mx-auto px-8 lg:24">
+        <!-- PARENT CONTAINER -->
+     <div class="flex justify-between border-b-2 ">
+        <div class="space-x-3 mb-4 mt-2 ">
+            <button class="btn bg-stone-200 text-black ">News</button>
+            <span class="text-white">portal</span>
+        </div>
+        <div class="flex justify-between space-x-3 p-3">
+            <h1>News</h1>
+            <p>Blog</p>
+        </div>
+     </div>
+     <!-- SEARCH NEWS -->
+     <div class="w-2/3 mt-4 mx-auto flex space-x-4">
+        <label class="input input-bordered flex items-center gap-2">
+            <input id="inputText" type="text" class="grow W-[20px]" placeholder="Search" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+          </label>
+          <button onclick="searchNews()" class="btn btn-active btn-secondary">Secondary</button>
+     </div>
+     <!-- SHOW CATAGORY -->
+     <div id="newsCatagory" class="flex flex-wrap gap-5 m-4">
+         
+    </div>
+    <!--  Loading -->
+    <span id="loading" class="hidden text-center mx-auto w-24 flex  loading loading-spinner text-success"></span>
+     <!-- news container -->
+     <div id="newsContainer" class="flex flex-col justify-around items-center ">
+ 
+     </div>
+      </div>
+    </section>
+
+    <script src="SCRIPT.JS"></script>
+  </body>
+</html>
